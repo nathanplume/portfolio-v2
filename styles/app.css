@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap");
+body {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+.container {
+  position: relative;
+}
+
+.hero-container {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #00a8ff;
+}
+
+/* ----- navbar ----- */
+.navbar {
+  background-color: #fff;
+}
+
+.nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  padding: 0 1rem;
+}
+
+.nav-header .logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.nav-header .menu-icons {
+  cursor: pointer;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+.nav-header .menu-icons .fa-xmark {
+  position: absolute;
+}
+
+.nav-header .menu-icons .hide-icon {
+  display: none;
+}
+
+.nav-header .menu-icons:hover {
+  color: #00a8ff;
+}
+
+.links {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.links li {
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.links li:first-child {
+  border-top: 1px solid #eee;
+}
+
+.links-show {
+  opacity: 1;
+  height: 16.4rem;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-header .menu-icons {
+    display: none;
+  }
+  .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    height: auto;
+  }
+  .links li {
+    border: 0;
+    padding-left: 1rem;
+  }
+  .links li:first-child {
+    border-top: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .navbar {
+    padding: 0 5rem;
+  }
+}
+
+.header-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  min-width: 90%;
+  letter-spacing: 3px;
+}
+
+.header-container h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.header-container P {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+
+.header-container button {
+  border: none;
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  cursor: pointer;
+  background-color: #00a8ff;
+  color: #fff;
+  border-radius: 0.3rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.header-container button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+/*# sourceMappingURL=app.css.map */
