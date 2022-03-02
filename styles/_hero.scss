@@ -1,0 +1,38 @@
+.header-container {
+  //   background-color: rgb(185, 185, 185);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  min-width: 90%;
+  letter-spacing: 2px;
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  P {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+  }
+  button {
+    border: none;
+    font: inherit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: inherit;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    cursor: pointer;
+    background-color: #00a8ff;
+    color: #fff;
+    border-radius: 0.3rem;
+    transition: transform 0.3s ease;
+  }
+  button:hover {
+    transform: translateY(-3px);
+  }
+}
