@@ -7,6 +7,22 @@ body {
   color: #333;
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 3rem 0;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
 // .container {
 //   position: relative;
 // }
@@ -25,20 +41,53 @@ a:hover {
   color: #00a8ff;
 }
 
-h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 5rem;
-}
-
 // import sections
 @import 'nav';
 @import 'hero';
 
 .about-container {
   background-color: rgb(175, 175, 175);
-  padding-top: 5rem;
+  padding: 5rem 2rem;
   .intro-container {
     text-align: center;
+  }
+}
+
+.skills-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .skills {
+    background-color: #00a8ff;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro-container {
+    max-width: 80%;
+    margin: auto;
+    // background-color: purple;
+    p {
+      padding: 0 3rem;
+    }
+  }
+  .about-content-container {
+    display: flex;
+    gap: 2rem;
+    // background-color: red;
+    max-width: 80%;
+    margin: auto;
+    .about-left {
+      flex: 1;
+      padding: 0 3rem;
+    }
+    .about-right {
+      flex: 1;
+      padding: 0 3rem;
+    }
   }
 }

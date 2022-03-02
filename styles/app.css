@@ -5,6 +5,23 @@ body {
   color: #333;
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 3rem 0;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
 .hero-container {
   height: 100vh;
   position: relative;
@@ -17,12 +34,6 @@ a {
 
 a:hover {
   color: #00a8ff;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 5rem;
 }
 
 /* ----- navbar ----- */
@@ -133,16 +144,22 @@ h2 {
   }
   .links li {
     border: 0;
-    padding-left: 1rem;
+    padding-left: 0rem;
   }
   .links li:first-child {
     border-top: 0;
   }
 }
 
-@media screen and (min-width: 1025px) {
-  .navbar {
-    padding: 0 5rem;
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-left: 5rem;
+  }
+  .links {
+    padding-right: 5rem;
+  }
+  .links li {
+    padding-left: 1rem;
   }
 }
 
@@ -195,10 +212,56 @@ h2 {
 
 .about-container {
   background-color: #afafaf;
-  padding-top: 5rem;
+  padding: 5rem 2rem;
 }
 
 .about-container .intro-container {
   text-align: center;
+}
+
+.skills-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills-container .skills {
+  background-color: #00a8ff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1200px) {
+  .intro-container {
+    max-width: 80%;
+    margin: auto;
+  }
+  .intro-container p {
+    padding: 0 3rem;
+  }
+  .about-content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+    max-width: 80%;
+    margin: auto;
+  }
+  .about-content-container .about-left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 3rem;
+  }
+  .about-content-container .about-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 3rem;
+  }
 }
 /*# sourceMappingURL=app.css.map */

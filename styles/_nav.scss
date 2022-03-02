@@ -85,7 +85,7 @@
     height: auto;
     li {
       border: 0;
-      padding-left: 1rem;
+      padding-left: 0rem;
     }
     li:first-child {
       border-top: 0;
@@ -93,8 +93,14 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
-  .navbar {
-    padding: 0 5rem;
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-left: 5rem;
+  }
+  .links {
+    padding-right: 5rem;
+    li {
+      padding-left: 1rem;
+    }
   }
 }
