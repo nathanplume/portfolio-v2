@@ -23,7 +23,7 @@
         <nav class="navbar">
           <div class="nav-header">
             <div class="logo">
-              <a href="">Nathan Plume</a>
+              <a href="./">Nathan Plume</a>
             </div>
             <div class="menu-icons">
               <i class="fa-solid fa-bars"></i>
@@ -32,21 +32,22 @@
           </div>
           <ul class="links">
             <li><a href="./">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="">Contact</a></li>
           </ul>
         </nav>
+
         <!-- ----- header ----- -->
         <div class="header-container">
           <h1>Hi, I'm Nathan</h1>
           <p>A Web Developer building projects with the MERN stack</p>
-          <button>Projects</button>
+          <a href="#projects">Projects</a>
         </div>
       </div>
 
       <!-- ----- about ----- -->
-      <div class="about-container">
+      <div id="about" class="about-container">
         <div class="intro-container">
           <h2>About Me</h2>
           <p>
@@ -89,9 +90,11 @@
           </div>
         </div>
       </div>
-      <!-- ----- portfolio ----- -->
-      <div class="portfolio-container">
-        <h2>Portfolio</h2>
+
+      <!-- ----- projects ----- -->
+      <div id="projects" class="portfolio-container">
+        <h2>Projects</h2>
+
         <!-- project 1 -->
         <div class="project-container">
           <div class="project-left">
@@ -105,12 +108,14 @@
               Magnam, eos quas!
             </p>
             <div class="project-links">
-              <button>View Live</button>
-              <a href="#">Github Code</a>
+              <!-- <button class="live">View Live</button> -->
+              <a href="" class="live">View Live</a>
+              <a href="" class="code">Code</a>
             </div>
           </div>
         </div>
-        <!-- project  -->
+
+        <!-- project 2 -->
         <div class="project-container">
           <div class="project-left">
             <img src="./images/grocery-buddy.jpg" alt="grocery buddy" />
@@ -123,12 +128,33 @@
               Magnam, eos quas!
             </p>
             <div class="project-links">
-              <button>View Live</button>
-              <a href="#">Github Code</a>
+              <!-- <button class="live">View Live</button> -->
+              <a href="" class="live">View Live</a>
+              <a href="" class="code">Code</a>
             </div>
           </div>
         </div>
-      </div>
+
+        <!-- project 3 -->
+        <div class="project-container">
+          <div class="project-left">
+            <img src="./images/grocery-buddy.jpg" alt="grocery buddy" />
+          </div>
+          <div class="project-right">
+            <h3>Grocery Buddy</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              repudiandae maiores tempore voluptas sed quam culpa molestias.
+              Magnam, eos quas!
+            </p>
+            <div class="project-links">
+              <!-- <button class="live">View Live</button> -->
+              <a href="" class="live">View Live</a>
+              <a href="" class="code">Code</a>
+            </div>
+          </div>
+        </div>
+
       <!-- container end -->
     </div>
     <script src="./app.js"></script>

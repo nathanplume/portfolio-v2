@@ -18,21 +18,16 @@
     line-height: 2rem;
     letter-spacing: 1px;
   }
-  button {
-    border: none;
-    font: inherit;
+  a {
+    @include buttons;
     font-size: 1.2rem;
-    font-weight: 700;
+    padding: 1.5rem 4rem;
     letter-spacing: inherit;
     text-transform: uppercase;
-    padding: 1.5rem 4rem;
-    cursor: pointer;
-    background-color: #00a8ff;
-    color: #fff;
-    border-radius: 0.3rem;
-    transition: transform 0.3s ease;
+    width: 8rem;
+    margin: auto;
   }
-  button:hover {
-    transform: translateY(-3px);
+  a:hover {
+    @include btnHover;
   }
 }

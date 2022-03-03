@@ -1,0 +1,19 @@
+// functions
+
+@mixin buttons {
+  display: block;
+  border: none;
+  font: inherit;
+  font-weight: 700;
+  //   text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  background-color: #00a8ff;
+  color: #fff;
+  border-radius: 0.3rem;
+  transition: transform 0.3s ease;
+}
+
+@mixin btnHover {
+  transform: translateY(-3px);
+}

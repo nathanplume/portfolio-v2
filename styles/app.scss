@@ -1,6 +1,6 @@
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
-
+@import 'variables';
 body {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
@@ -46,54 +46,4 @@ a:hover {
 @import 'nav';
 @import 'hero';
 @import 'about';
-
-.portfolio-container {
-  padding: 5rem 2rem;
-  background-color: rgb(231, 231, 231);
-  .project-container {
-    margin-bottom: 3rem;
-    .project-left {
-      display: flex;
-      justify-content: center;
-      img {
-        max-width: 400px;
-        max-height: 400px;
-        border-radius: 1rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      }
-    }
-    .project-right {
-      p {
-        margin-bottom: 2rem;
-      }
-      .project-links {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        a {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .project-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    width: 80%;
-    max-width: 1600px;
-    margin: auto;
-    // background-color: purple;
-    .project-left {
-      flex: 1;
-      // background-color: red;
-    }
-    .project-right {
-      flex: 1;
-      // background: yellow;
-    }
-  }
-}
+@import 'projects';

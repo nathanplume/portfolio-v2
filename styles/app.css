@@ -188,14 +188,12 @@ a:hover {
   letter-spacing: 1px;
 }
 
-.header-container button {
+.header-container a {
+  display: block;
   border: none;
   font: inherit;
-  font-size: 1.2rem;
   font-weight: 700;
-  letter-spacing: inherit;
-  text-transform: uppercase;
-  padding: 1.5rem 4rem;
+  padding: 1rem 1.5rem;
   cursor: pointer;
   background-color: #00a8ff;
   color: #fff;
@@ -204,9 +202,15 @@ a:hover {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  font-size: 1.2rem;
+  padding: 1.5rem 4rem;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  width: 8rem;
+  margin: auto;
 }
 
-.header-container button:hover {
+.header-container a:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
@@ -230,15 +234,28 @@ a:hover {
 }
 
 .skills-container .skills {
-  background-color: #00a8ff;
-  padding: 1rem 1.5rem;
-  border-radius: 0.3rem;
+  display: block;
+  border: none;
+  font: inherit;
   font-weight: 700;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  background-color: #00a8ff;
+  color: #fff;
+  border-radius: 0.3rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  cursor: default;
+  background-color: #c2c2c2;
+  color: #555555;
 }
 
 @media screen and (min-width: 1200px) {
   .intro-container {
-    max-width: 80%;
+    width: 80%;
+    max-width: 1200px;
     margin: auto;
   }
   .intro-container p {
@@ -250,7 +267,7 @@ a:hover {
     display: flex;
     gap: 2rem;
     width: 80%;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: auto;
   }
   .about-content-container .about-left {
@@ -273,7 +290,7 @@ a:hover {
 }
 
 .portfolio-container .project-container {
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
 }
 
 .portfolio-container .project-container .project-left {
@@ -293,6 +310,10 @@ a:hover {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.portfolio-container .project-container .project-right h3 {
+  text-align: center;
+}
+
 .portfolio-container .project-container .project-right p {
   margin-bottom: 2rem;
 }
@@ -304,11 +325,37 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
 }
 
 .portfolio-container .project-container .project-right .project-links a {
-  text-decoration: underline;
+  display: block;
+  border: none;
+  font: inherit;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  background-color: #00a8ff;
+  color: #fff;
+  border-radius: 0.3rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.portfolio-container .project-container .project-right .project-links a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.portfolio-container .project-container .project-right .project-links .code {
+  background-color: rgba(51, 51, 51, 0);
+  border: 2px solid #00a8ff;
+  color: #00a8ff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -321,7 +368,7 @@ a:hover {
             justify-content: center;
     gap: 2rem;
     width: 80%;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: auto;
   }
   .project-container .project-left {
