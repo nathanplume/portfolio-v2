@@ -9,6 +9,7 @@ h2 {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 5rem;
+  text-align: center;
 }
 
 h3 {
@@ -248,7 +249,8 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
     gap: 2rem;
-    max-width: 80%;
+    width: 80%;
+    max-width: 1600px;
     margin: auto;
   }
   .about-content-container .about-left {
@@ -262,6 +264,75 @@ a:hover {
         -ms-flex: 1;
             flex: 1;
     padding: 0 3rem;
+  }
+}
+
+.portfolio-container {
+  padding: 5rem 2rem;
+  background-color: #e7e7e7;
+}
+
+.portfolio-container .project-container {
+  margin-bottom: 3rem;
+}
+
+.portfolio-container .project-container .project-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-container .project-container .project-left img {
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.portfolio-container .project-container .project-right p {
+  margin-bottom: 2rem;
+}
+
+.portfolio-container .project-container .project-right .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.portfolio-container .project-container .project-right .project-links a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+  .project-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    max-width: 1600px;
+    margin: auto;
+  }
+  .project-container .project-left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .project-container .project-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 /*# sourceMappingURL=app.css.map */

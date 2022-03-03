@@ -11,6 +11,7 @@ h2 {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 5rem;
+  text-align: center;
 }
 
 h3 {
@@ -44,50 +45,55 @@ a:hover {
 // import sections
 @import 'nav';
 @import 'hero';
+@import 'about';
 
-.about-container {
-  background-color: rgb(175, 175, 175);
+.portfolio-container {
   padding: 5rem 2rem;
-  .intro-container {
-    text-align: center;
-  }
-}
-
-.skills-container {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-
-  .skills {
-    background-color: #00a8ff;
-    padding: 1rem 1.5rem;
-    border-radius: 0.3rem;
-    font-weight: 700;
+  background-color: rgb(231, 231, 231);
+  .project-container {
+    margin-bottom: 3rem;
+    .project-left {
+      display: flex;
+      justify-content: center;
+      img {
+        max-width: 400px;
+        max-height: 400px;
+        border-radius: 1rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+    }
+    .project-right {
+      p {
+        margin-bottom: 2rem;
+      }
+      .project-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .intro-container {
-    max-width: 80%;
+  .project-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    max-width: 1600px;
     margin: auto;
     // background-color: purple;
-    p {
-      padding: 0 3rem;
-    }
-  }
-  .about-content-container {
-    display: flex;
-    gap: 2rem;
-    // background-color: red;
-    max-width: 80%;
-    margin: auto;
-    .about-left {
+    .project-left {
       flex: 1;
-      padding: 0 3rem;
+      // background-color: red;
     }
-    .about-right {
+    .project-right {
       flex: 1;
-      padding: 0 3rem;
+      // background: yellow;
     }
   }
 }
