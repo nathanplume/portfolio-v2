@@ -1,0 +1,51 @@
+.contact-container {
+  padding: 5rem 2rem;
+  background-color: rgb(133, 133, 133);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    margin-bottom: 2rem;
+  }
+  .form-container {
+    background-color: rgb(224, 224, 224);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    form {
+      display: flex;
+      flex-direction: column;
+      input {
+        box-sizing: border-box;
+        padding: 1rem;
+        font: inherit;
+        border: none;
+        border-radius: 0.3rem;
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+      #message {
+        height: 200px;
+        font: inherit;
+        padding: 1rem;
+        border: none;
+        border-radius: 0.3rem;
+        margin-bottom: 1rem;
+        resize: none;
+      }
+      button {
+        @include buttons;
+        width: 200px;
+        margin-top: 1.5rem;
+        align-self: center;
+      }
+      button:hover {
+        @include btnHover;
+      }
+      .form-labels {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

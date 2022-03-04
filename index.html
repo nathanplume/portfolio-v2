@@ -18,12 +18,12 @@
 
   <body>
     <div class="container">
-      <div class="hero-container">
+      <div id="home" class="hero-container">
         <!-- ----- nav ----- -->
         <nav class="navbar">
           <div class="nav-header">
             <div class="logo">
-              <a href="./">Nathan Plume</a>
+              <a href="#home">Nathan Plume</a>
             </div>
             <div class="menu-icons">
               <i class="fa-solid fa-bars"></i>
@@ -31,10 +31,10 @@
             </div>
           </div>
           <ul class="links">
-            <li><a href="./">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 
@@ -154,7 +154,61 @@
             </div>
           </div>
         </div>
+      </div>
 
+      <!-- ----- contact ----- -->
+      <div id="contact" class="contact-container">
+        <h2>Contact</h2>
+        <p>Drop me a message and I'll get back to you as soon as possible!</p>
+        <div class="form-container">
+          <!-- formsubmit.co used to send message -->
+          <form
+            action="https://formsubmit.co/6afcb15f62871db28ac137b929e42413"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://nathanplume.com/thankyou.html"
+            />
+            <!-- <input type="hidden" name="_next" value="./thankyou.html" /> -->
+            <label for="name" class="form-labels">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email" class="form-labels">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <!-- <label for="name" class="form-labels">Message</label>
+            <input
+              id="message"
+              type="text"
+              name="message"
+              placeholder="Enter your message"
+              required
+            /> -->
+            <label for="name" class="form-labels">Message</label>
+            <textarea
+              id="message"
+              type="text"
+              name="message"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
       <!-- container end -->
     </div>
     <script src="./app.js"></script>

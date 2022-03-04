@@ -1,6 +1,10 @@
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
 @import 'variables';
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
@@ -10,6 +14,7 @@ body {
 h2 {
   font-size: 2rem;
   font-weight: 800;
+  margin-top: 1rem;
   margin-bottom: 5rem;
   text-align: center;
 }
@@ -47,3 +52,4 @@ a:hover {
 @import 'hero';
 @import 'about';
 @import 'projects';
+@import 'contact';
