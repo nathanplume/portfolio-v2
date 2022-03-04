@@ -475,4 +475,76 @@ a:hover {
 .contact-container .form-container form .form-labels {
   margin-bottom: 1rem;
 }
+
+footer {
+  padding: 0rem 2rem 2rem 2rem;
+  background-color: teal;
+  margin: auto;
+}
+
+footer .footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-top .footer-social {
+  text-align: center;
+  margin: auto;
+}
+
+footer .footer-top .footer-social .footer-icons {
+  font-size: 2rem;
+}
+
+footer .footer-top .footer-about h3 {
+  text-align: center;
+}
+
+footer .footer-bottom {
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+  width: 80%;
+  max-width: 1000px;
+  border-top: 1px solid #333;
+}
+
+footer .footer-bottom p {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  footer .footer-top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+  }
+  footer .footer-top .footer-social {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: end;
+    margin: 0;
+  }
+  footer .footer-top .footer-about {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  footer .footer-top .footer-about h3 {
+    text-align: start;
+  }
+}
 /*# sourceMappingURL=app.css.map */
