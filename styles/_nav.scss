@@ -5,10 +5,17 @@
 // }
 
 .navbar {
-  background-color: #fff;
   z-index: 1;
   position: fixed;
   width: 100%;
+  background-color: $primary-color;
+  transition: all 0.3s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.transparent {
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .nav-header {
@@ -39,30 +46,37 @@
     }
   }
   .menu-icons:hover {
-    color: #00a8ff;
+    color: $cta-color;
   }
 }
 
 .links {
+  // background-color: $primary-color;
   opacity: 0;
   height: 0;
   overflow: hidden;
   transition: all 0.5s ease;
   li {
     text-align: center;
-    border-bottom: 1px solid #eee;
+    // border-bottom: 1px solid #eee;
     a {
       display: block;
       padding: 1.5rem;
+      // background-color: $cta-color;
+      // color: $primary-color;
     }
+    // a:hover {
+    //   background-color: $primary-color;
+    //   color: $cta-color;
+    // }
   }
-  li:first-child {
-    border-top: 1px solid #eee;
-  }
+  // li:first-child {
+  //   border-top: 1px solid #eee;
+  // }
 }
 .links-show {
   opacity: 1;
-  height: 16.4rem;
+  height: 16rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -101,6 +115,20 @@
     padding-right: 5rem;
     li {
       padding-left: 1rem;
+    }
+  }
+}
+
+// nav mobile link color
+@media screen and (max-width: 600px) {
+  .links {
+    a {
+      background-color: $cta-color;
+      color: $primary-color;
+    }
+    a:hover {
+      background-color: $primary-color;
+      color: $cta-color;
     }
   }
 }

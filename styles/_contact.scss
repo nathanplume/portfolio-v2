@@ -1,6 +1,6 @@
 .contact-container {
   padding: 5rem 2rem;
-  background-color: rgb(133, 133, 133);
+  background-color: $primary-color;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +8,7 @@
     margin-bottom: 2rem;
   }
   .form-container {
-    background-color: rgb(224, 224, 224);
+    background-color: $light-gray;
     border-radius: 0.5rem;
     padding: 2rem;
     max-width: 600px;

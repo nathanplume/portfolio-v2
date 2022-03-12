@@ -20,7 +20,7 @@
     <div class="container">
       <section id="home" class="hero-container">
         <!-- ----- nav ----- -->
-        <nav class="navbar">
+        <nav class="navbar transparent">
           <div class="nav-header">
             <div class="logo">
               <a href="#home">Nathan Plume</a>
@@ -40,9 +40,15 @@
 
         <!-- ----- header ----- -->
         <div class="header-container">
-          <h1>Hi, I'm Nathan</h1>
-          <p>A Web Developer building projects with the MERN stack</p>
-          <a href="#projects">Projects</a>
+          <div class="header-left">
+            <h1>Hi, I'm Nathan</h1>
+            <p>A Web Developer building projects with the MERN stack</p>
+            <a href="#projects">Projects</a>
+          </div>
+
+          <div class="header-right">
+            <img src="./images/header-image.svg" alt="header-image" />
+          </div>
         </div>
       </section>
 
@@ -173,22 +179,10 @@
             />
             <!-- <input type="hidden" name="_next" value="./thankyou.html" /> -->
             <label for="name" class="form-labels">Name</label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              required
-            />
+            <input id="name" type="text" name="name" required />
 
             <label for="email" class="form-labels">Email</label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-            />
+            <input id="email" type="email" name="email" required />
             <!-- <label for="name" class="form-labels">Message</label>
             <input
               id="message"
@@ -202,7 +196,6 @@
               id="message"
               type="text"
               name="message"
-              placeholder="Enter your message"
               required
             ></textarea>
             <button type="submit">Send</button>

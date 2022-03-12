@@ -37,6 +37,15 @@ p {
 .hero-container {
   height: 100vh;
   position: relative;
+  // background: linear-gradient(
+  //   45deg,
+  //   #45aee8 25%,
+  //   #4ec0ff 25% 50%,
+  //   #28313e 50% 75%,
+  //   #1e2833 75%
+  // );
+  background: linear-gradient(100deg, #f2f2f2 50%, #fff 50%);
+  color: $dark-gray;
 }
 
 a {
@@ -44,7 +53,7 @@ a {
   color: #333;
 }
 a:hover {
-  color: #00a8ff;
+  color: $cta-color;
 }
 
 // import sections

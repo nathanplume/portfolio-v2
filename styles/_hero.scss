@@ -1,12 +1,12 @@
 .header-container {
   //   background-color: rgb(185, 185, 185);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  min-width: 90%;
-  letter-spacing: 2px;
+  // background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  margin: auto;
   h1 {
     font-size: 3rem;
     font-weight: 800;
@@ -26,8 +26,43 @@
     text-transform: uppercase;
     width: 8rem;
     margin: auto;
+    text-align: center;
   }
   a:hover {
     @include btnHover;
+  }
+
+  .header-left {
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .header-right {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    display: flex;
+    max-width: 1600px;
+    a {
+      margin: initial;
+    }
+    .header-left {
+      flex: 1;
+      // background: purple;
+      text-align: start;
+    }
+
+    .header-right {
+      display: block;
+      flex: 1;
+      // background-color: green;
+      text-align: center;
+      img {
+        max-width: 80%;
+      }
+    }
   }
 }

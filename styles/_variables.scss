@@ -1,4 +1,9 @@
 // functions
+$primary-color: #fff;
+$secondary-color: #2f2e41;
+$cta-color: #00bfa6;
+$dark-gray: #333;
+$light-gray: #f2f2f2;
 
 @mixin buttons {
   display: block;
@@ -8,7 +13,7 @@
   //   text-transform: uppercase;
   padding: 1rem 1.5rem;
   cursor: pointer;
-  background-color: #00a8ff;
+  background-color: $cta-color;
   color: #fff;
   border-radius: 0.3rem;
   transition: transform 0.3s ease;

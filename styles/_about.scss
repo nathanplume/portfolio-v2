@@ -1,5 +1,5 @@
 .about-container {
-  background-color: rgb(175, 175, 175);
+  background-color: $primary-color;
   padding: 5rem 2rem;
   .intro-container {
     text-align: center;
@@ -14,8 +14,8 @@
   .skills {
     @include buttons;
     cursor: default;
-    background-color: rgb(194, 194, 194);
-    color: rgb(85, 85, 85);
+    background-color: rgb(119, 119, 119);
+    color: #dfdfdf;
   }
 }
 
