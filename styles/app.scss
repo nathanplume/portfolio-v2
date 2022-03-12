@@ -56,6 +56,29 @@ a:hover {
   color: $cta-color;
 }
 
+.underline {
+  height: 0.3rem;
+  width: 10rem;
+  background-color: $cta-color;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.portfolio-container {
+  .underline {
+    top: 9rem;
+  }
+}
+
+.contact-container {
+  .underline {
+    top: 9rem;
+  }
+}
+
 // import sections
 @import 'nav';
 @import 'hero';

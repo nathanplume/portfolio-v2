@@ -44,6 +44,26 @@ a:hover {
   color: #00bfa6;
 }
 
+.underline {
+  height: 0.3rem;
+  width: 10rem;
+  background-color: #00bfa6;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.portfolio-container .underline {
+  top: 9rem;
+}
+
+.contact-container .underline {
+  top: 9rem;
+}
+
 /* ----- navbar ----- */
 .navbar {
   z-index: 1;
@@ -257,7 +277,7 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1600px;
+    max-width: 1400px;
   }
   .header-container a {
     margin: initial;
@@ -281,12 +301,13 @@ a:hover {
 }
 
 .about-container {
-  background-color: #fff;
+  background-color: #f2f2f2;
   padding: 5rem 2rem;
 }
 
 .about-container .intro-container {
   text-align: center;
+  position: relative;
 }
 
 .skills-container {
@@ -350,6 +371,7 @@ a:hover {
 }
 
 .portfolio-container {
+  position: relative;
   padding: 5rem 2rem;
   background-color: #fff;
 }
@@ -449,8 +471,9 @@ a:hover {
 }
 
 .contact-container {
+  position: relative;
   padding: 5rem 2rem;
-  background-color: #fff;
+  background-color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,6 +517,8 @@ a:hover {
   border-radius: 0.3rem;
   margin-bottom: 1rem;
   width: 100%;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .contact-container .form-container form #message {
@@ -504,6 +529,8 @@ a:hover {
   border-radius: 0.3rem;
   margin-bottom: 1rem;
   resize: none;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .contact-container .form-container form button {
@@ -538,7 +565,8 @@ a:hover {
 
 footer {
   padding: 0rem 2rem 2rem 2rem;
-  background-color: #fff;
+  background-color: #333;
+  color: #fff;
   margin: auto;
 }
 
@@ -562,6 +590,14 @@ footer .footer-top .footer-social {
 
 footer .footer-top .footer-social .footer-icons {
   font-size: 2rem;
+}
+
+footer .footer-top .footer-social .footer-icons a {
+  color: #00bfa6;
+}
+
+footer .footer-top .footer-social .footer-icons a:hover {
+  color: #fff;
 }
 
 footer .footer-top .footer-about h3 {
