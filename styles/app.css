@@ -244,7 +244,7 @@ a:hover {
   cursor: pointer;
   background-color: #00bfa6;
   color: #fff;
-  border-radius: 0.3rem;
+  border-radius: 5rem;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -328,7 +328,7 @@ a:hover {
   cursor: pointer;
   background-color: #00bfa6;
   color: #fff;
-  border-radius: 0.3rem;
+  border-radius: 5rem;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -427,7 +427,7 @@ a:hover {
   cursor: pointer;
   background-color: #00bfa6;
   color: #fff;
-  border-radius: 0.3rem;
+  border-radius: 5rem;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -441,8 +441,8 @@ a:hover {
 
 .portfolio-container .project-container .project-right .project-links .code {
   background-color: rgba(51, 51, 51, 0);
-  border: 2px solid #00a8ff;
-  color: #00a8ff;
+  color: #00bfa6;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1200px) {
@@ -542,7 +542,7 @@ a:hover {
   cursor: pointer;
   background-color: #00bfa6;
   color: #fff;
-  border-radius: 0.3rem;
+  border-radius: 5rem;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
