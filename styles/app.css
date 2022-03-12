@@ -1,30 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@700;800;900&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif;
   color: #333;
 }
 
 h2 {
-  font-size: 2rem;
-  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
   margin-top: 1rem;
   margin-bottom: 5rem;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
   font-weight: 700;
   margin: 3rem 0;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 2rem;
 }
 
@@ -50,18 +52,18 @@ a:hover {
   background-color: #00bfa6;
   border-radius: 0.5rem;
   position: absolute;
-  top: 3rem;
+  top: 5rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
 .portfolio-container .underline {
-  top: 9rem;
+  top: 11rem;
 }
 
 .contact-container .underline {
-  top: 9rem;
+  top: 11rem;
 }
 
 /* ----- navbar ----- */
@@ -97,8 +99,9 @@ a:hover {
 }
 
 .nav-header .logo {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
   letter-spacing: 1px;
 }
 
@@ -223,13 +226,14 @@ a:hover {
 }
 
 .header-container h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+  margin-bottom: 1rem;
 }
 
 .header-container P {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
   line-height: 2rem;
   letter-spacing: 1px;
@@ -239,7 +243,6 @@ a:hover {
   display: block;
   border: none;
   font: inherit;
-  font-weight: 700;
   padding: 1rem 1.5rem;
   cursor: pointer;
   background-color: #00bfa6;
@@ -249,11 +252,12 @@ a:hover {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  font-size: 1.2rem;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 1.3rem;
   padding: 1.5rem 4rem;
   letter-spacing: inherit;
-  text-transform: uppercase;
-  width: 8rem;
+  width: 7rem;
   margin: auto;
   text-align: center;
 }
@@ -261,11 +265,12 @@ a:hover {
 .header-container a:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+  background-color: #00d8bb;
 }
 
 .header-container .header-left {
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .header-container .header-right {
@@ -323,7 +328,6 @@ a:hover {
   display: block;
   border: none;
   font: inherit;
-  font-weight: 700;
   padding: 1rem 1.5rem;
   cursor: pointer;
   background-color: #00bfa6;
@@ -333,6 +337,8 @@ a:hover {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: default;
   background-color: #777777;
   color: #dfdfdf;
@@ -422,7 +428,6 @@ a:hover {
   display: block;
   border: none;
   font: inherit;
-  font-weight: 700;
   padding: 1rem 1.5rem;
   cursor: pointer;
   background-color: #00bfa6;
@@ -432,17 +437,23 @@ a:hover {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .portfolio-container .project-container .project-right .project-links a:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+  background-color: #00d8bb;
 }
 
 .portfolio-container .project-container .project-right .project-links .code {
   background-color: rgba(51, 51, 51, 0);
   color: #00bfa6;
-  text-decoration: underline;
+}
+
+.portfolio-container .project-container .project-right .project-links .code:hover {
+  color: #fff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -537,7 +548,6 @@ a:hover {
   display: block;
   border: none;
   font: inherit;
-  font-weight: 700;
   padding: 1rem 1.5rem;
   cursor: pointer;
   background-color: #00bfa6;
@@ -547,6 +557,8 @@ a:hover {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   width: 200px;
   margin-top: 1.5rem;
   -ms-flex-item-align: center;
@@ -557,6 +569,7 @@ a:hover {
 .contact-container .form-container form button:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+  background-color: #00d8bb;
 }
 
 .contact-container .form-container form .form-labels {

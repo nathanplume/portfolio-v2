@@ -39,7 +39,11 @@
           background-color: rgba(51, 51, 51, 0);
           // border: 2px solid #00a8ff;
           color: $cta-color;
-          text-decoration: underline;
+          // text-decoration: underline;
+        }
+        .code:hover {
+          // background-color: $cta-color;
+          color: $primary-color;
         }
       }
     }

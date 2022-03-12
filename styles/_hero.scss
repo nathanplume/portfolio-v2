@@ -8,23 +8,24 @@
   width: 90%;
   margin: auto;
   h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    margin-bottom: 1rem;
   }
   P {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
     line-height: 2rem;
     letter-spacing: 1px;
   }
   a {
     @include buttons;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 1.5rem 4rem;
     letter-spacing: inherit;
-    text-transform: uppercase;
-    width: 8rem;
+    // text-transform: uppercase;
+    width: 7rem;
     margin: auto;
     text-align: center;
   }
@@ -34,7 +35,7 @@
 
   .header-left {
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
 
   .header-right {
