@@ -50,11 +50,14 @@ p {
   // );
   background: linear-gradient(100deg, #f2f2f2 50%, #fff 50%);
   color: $dark-gray;
+  a {
+    color: $dark-gray;
+  }
 }
 
 a {
   text-decoration: none;
-  color: #333;
+  color: $cta-color;
 }
 a:hover {
   color: $cta-color;

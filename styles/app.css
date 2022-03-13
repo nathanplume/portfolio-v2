@@ -37,9 +37,13 @@ p {
   color: #333;
 }
 
+.hero-container a {
+  color: #333;
+}
+
 a {
   text-decoration: none;
-  color: #333;
+  color: #00bfa6;
 }
 
 a:hover {
