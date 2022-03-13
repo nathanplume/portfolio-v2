@@ -122,14 +122,16 @@
 
 // nav mobile link color
 @media screen and (max-width: 600px) {
+  .navbar {
+    background-color: $primary-color;
+  }
   .links {
     a {
-      background-color: $cta-color;
-      color: $primary-color;
+      background-color: $primary-color;
     }
     a:hover {
-      background-color: $primary-color;
-      color: $cta-color;
+      background-color: $cta-color;
+      color: $primary-color;
     }
   }
 }

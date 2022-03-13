@@ -36,6 +36,13 @@ footer {
     border-top: 1px solid #333;
     p {
       margin-top: 1rem;
+      padding-top: 2rem;
+      border-top: 1px solid #fff;
+      font-size: 0.9rem;
+      .footer-name {
+        font-weight: 700;
+        text-decoration: underline;
+      }
     }
   }
 }

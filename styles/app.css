@@ -200,13 +200,15 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .navbar {
+    background-color: #fff;
+  }
   .links a {
-    background-color: #00bfa6;
-    color: #fff;
+    background-color: #fff;
   }
   .links a:hover {
-    background-color: #fff;
-    color: #00bfa6;
+    background-color: #00bfa6;
+    color: #fff;
   }
 }
 
@@ -628,6 +630,14 @@ footer .footer-bottom {
 
 footer .footer-bottom p {
   margin-top: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid #fff;
+  font-size: 0.9rem;
+}
+
+footer .footer-bottom p .footer-name {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1200px) {
